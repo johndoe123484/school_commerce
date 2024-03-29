@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #b8b8b8;
+    width: 88%;
+    margin: 100px auto 14px auto;
+    padding: 10px 6px;
+}
+
+.footer > div {
+    display: flex;
+    gap: 40px;
+}
+
+.footer > div > * {
+    text-decoration: none;
+    color: #676767;
+}
+
+  /* MEDIA QUERY */
+
+  @media (max-width: 720px) {
+    .footer p, .footer div a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
